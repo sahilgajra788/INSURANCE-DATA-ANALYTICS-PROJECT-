@@ -9,6 +9,9 @@ Dive into our comprehensive insurance management system designed to streamline p
 - MYSQL
 
 # Problem Statements
+
+ -- BRANCH --
+ 
 1.Target FY
 
 2.Placed Achievement
@@ -40,6 +43,29 @@ Dive into our comprehensive insurance management system designed to streamline p
 13.No of meeting By Account Exe
 
 14.Top Open Opportunity
+
+ -- POLICY --
+ 
+ 1-Total Policy
+ 
+2-Total Customers
+
+3-Age Bucket Wise Policy Count
+
+4-Gender Wise Policy Count
+
+5-Policy Type Wise Policy Count
+
+6-Policy Expire This Year
+
+7-Premium Growth Rate
+
+8-Claim Status Wise Policy Count
+
+9-Payment Status Wise Policy Count
+
+10-Total Claim Amount
+
 
 # EXCEL DASHBOARD
 
@@ -253,6 +279,8 @@ select concat(round(((select sum(amount) from brokerage where income_class = "re
 select concat(round((select sum(amount) from invoice
  where income_class = "renewal")/ (select sum(renewal_budget)
  from individual_budgets)*100,2),'%') As "renewal invoice Ach %" ;
+
+ # THANK YOU
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
